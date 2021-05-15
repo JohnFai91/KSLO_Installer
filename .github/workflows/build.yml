@@ -1,0 +1,33 @@
+# Workflow name
+name: Build
+on:
+# When it will be triggered
+# And in which branch
+  pull_request:
+  push:
+    branches:
+      - main
+# Where will they run
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      
+      - name: Setup Java JDK
+        uses: actions/setup-java@v2.0.0
+        with:
+          java-version: 8
+          distribution: 'adopt'
+          
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+        
+      - name: Run tests with gradle
+        run: ./gradlew test
+
+      - name: Build with gradle
+        run: ./gradlew build
