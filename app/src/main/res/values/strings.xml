@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Installer</string>
+
+    <string name="DownloadNow">Download now</string>
+    <string name="DownloadApp">Download app</string>
+    <string name="DownloadAppEnquiry">Are you sure to download? Data charges may apply.</string>
+
+    <string name="android_auto_update_download_progress">Downloading:%1$d%%</string>
+    <string name="update_dialog_checking">Checking…</string>
+    <string name="android_auto_update_notify_ticker">Found new version, click to update</string>
+
+    <string name="Downloading">Downloading…</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Confirm">Confirm</string>
+
+    <string name="Settings">Settings</string>
+    <string name="selectLanguage">Select Language</string>
+    <string name="SelectTheme">Select theme</string>
+
+    <string name="Chinese">Chinese (zh-HK)</string>
+    <string name="English">English</string>
+
+    <string name="LightTheme">Light Theme</string>
+    <string name="DarkTheme">Dark Theme</string>
+    <string name="SystemDefault">System default</string>
+</resources>

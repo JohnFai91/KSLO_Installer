@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">安裝</string>
+
+    <string name="DownloadNow">現在下載</string>
+    <string name="DownloadApp">下載應用程式</string>
+    <string name="DownloadAppEnquiry">你確定要下載嗎?請注意你的流量。</string>
+
+    <string name="android_auto_update_download_progress">正在下載:%1$d%%</string>
+    <string name="update_dialog_checking">檢查中…</string>
+    <string name="android_auto_update_notify_ticker">發現新版本，點擊更新</string>
+
+    <string name="Downloading">下載中…</string>
+    <string name="Cancel">取消</string>
+    <string name="Confirm">確認</string>
+
+    <string name="Settings">設定</string>
+    <string name="selectLanguage">選擇語言</string>
+    <string name="SelectTheme">選擇主題</string>
+
+    <string name="Chinese">中文 (zh-HK)</string>
+    <string name="English">English</string>
+
+    <string name="LightTheme">白色主題</string>
+    <string name="DarkTheme">深色主題</string>
+    <string name="SystemDefault">系統設定</string>
+</resources>
