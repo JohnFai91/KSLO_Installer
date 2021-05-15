@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -24,7 +23,6 @@ import java.util.List;
 public class SettingsActivity extends AppCompatActivity {
     String Theme, Theme1, Theme2, Theme3;
     Spinner spinner;
-    Button change2Eng, change2Chin;
 
     SharedPreferences pref;
     @SuppressLint("RestrictedApi")
@@ -37,9 +35,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         pref = getApplicationContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
         Theme = pref.getString("theme","Follow System");
-
-        change2Eng =  findViewById(R.id.English);
-        change2Chin =  findViewById(R.id.Chinese);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
@@ -112,12 +107,6 @@ public class SettingsActivity extends AppCompatActivity {
 
                 }
             });
-
-
-            change2Eng.setOnClickListener(v -> setLocale("en"));
-
-
-            change2Chin.setOnClickListener(v -> setLocale("zh-HK"));
         }
     }
 
@@ -128,21 +117,6 @@ public class SettingsActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void setLocale(String lang){
-        Editor editor = pref.edit();
-
-        editor.putString("lang", lang);  // Saving string
-
-        // Save the changes in SharedPreferences
-        editor.apply(); // commit changes
-
-        finish();
-        App.updateLanguage(this, lang);
-        Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
-        finish();
-        startActivity(intent);
     }
     public void setTheme(String theme) {
 

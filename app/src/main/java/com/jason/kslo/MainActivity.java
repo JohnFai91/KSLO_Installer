@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_action_bar_settings) {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            finish();
             startActivity(intent);
             return true;
         }
